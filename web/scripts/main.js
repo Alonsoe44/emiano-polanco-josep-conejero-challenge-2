@@ -1,3 +1,4 @@
+
 import Card from "./components/Card.js";
 import series from "./series.js";
 
@@ -140,3 +141,4 @@ new Card(parentElement, "serie", series[0]);
 new Card(parentElement, "serie", series[1]);
 new Card(parentElement, "serie", series[2]);
 new Card(parentElement, "serie", series[3]);
+
