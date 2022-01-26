@@ -33,9 +33,9 @@ const parentElementSeriesVistas = document.querySelector(
   ".series-list.series-list--watched"
 );
 series.forEach((serie) => {
-  if (serie.watched) {
-    new Card(parentElementSeriesVistas, "serie", serie);
-  } else {
-    new Card(parentElementSeriesPendientes, "serie", serie);
-  }
+  new Card(
+    serie.watched ? parentElementSeriesVistas : parentElementSeriesPendientes,
+    "serie",
+    serie
+  );
 });
