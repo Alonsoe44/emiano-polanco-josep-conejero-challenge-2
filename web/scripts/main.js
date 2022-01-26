@@ -25,33 +25,6 @@ pageElement.innerHTML = `<header class="main-header">
               <li class="serie">
                 <img
                   class="serie__poster"
-                  src="https://m.media-amazon.com/images/M/MV5BZGJjYzhjYTYtMDBjYy00OWU1LTg5OTYtNmYwOTZmZjE3ZDdhXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg"
-                  alt="The Sopranos poster"
-                />
-                <h4 class="serie__title">The Sopranos</h4>
-                <p class="serie__info">David Chase (1999)</p>
-                <ul class="score">
-                  <li class="score__star">
-                    <i class="icon-score far fa-star" title="1/5"></i>
-                  </li>
-                  <li class="score__star">
-                    <i class="icon-score far fa-star" title="2/5"></i>
-                  </li>
-                  <li class="score__star">
-                    <i class="icon-score far fa-star" title="3/5"></i>
-                  </li>
-                  <li class="score__star">
-                    <i class="icon-score far fa-star" title="4/5"></i>
-                  </li>
-                  <li class="score__star">
-                    <i class="icon-score far fa-star" title="5/5"></i>
-                  </li>
-                </ul>
-                <i class="fas fa-times-circle icon--delete"></i>
-              </li>
-              <li class="serie">
-                <img
-                  class="serie__poster"
                   src="https://t1.pixers.pics/img-1fb6f67c/posters-game-of-thrones.jpg?H4sIAAAAAAAAA3VOW27EIAy8DpGS2BAIkBvs394gIjy2afNAQNtVT1_Sqp-VZXs80ngG3o9sggfrj-IT7Ktzm4ewbvXKU_J5_fJkUGOLzVTZjSBWdH74ZNMZSUcH1VLRCsbaUYpm-jRVuJv0Rl5KiXkCyEMf12f9VpfNYPcMDKkEVCC00lpYzh1aN8cuF3M4k1zH8TliH49Hi1c1f0EkYiuvACWtO6mJzupVyGt8NPCP3y-GqoL7DSgCsp-JwNnFzvcbRWS1kbNZuEELHox0izdBeoUYLBVej9qZEMIsFmmWRY7Kec_n_hu83S9APwEAAA=="
                   alt="Game of Thrones poster"
                 />
@@ -135,7 +108,10 @@ pageElement.innerHTML = `<header class="main-header">
         </section>
       </main>`;
 
-const parentElement = document.querySelector("ul");
+//const parentElement = document.querySelector("ul");
+const parentElement = document.querySelector(
+  ".series-pending ul:first-of-type"
+);
 new Card(parentElement, "serie", series[0]);
 new Card(parentElement, "serie", series[1]);
 new Card(parentElement, "serie", series[2]);
