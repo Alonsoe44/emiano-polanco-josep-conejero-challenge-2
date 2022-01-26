@@ -16,8 +16,6 @@ export default class Card extends Component {
     this.creadorSerie = serie.creator + " (" + serie.year + ")";
     this.tituloAltSerie = serie.name + " poster";
     this.element.innerHTML = this.generateHTML();
-
-    /* this.element.appendChild("series-list"); */
   }
 
   generateHTML() {
