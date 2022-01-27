@@ -1,4 +1,3 @@
-
 import Card from "./components/Card.js";
 import series from "./series.js";
 
@@ -40,4 +39,3 @@ series.forEach((serie) => {
     serie
   );
 });
-
